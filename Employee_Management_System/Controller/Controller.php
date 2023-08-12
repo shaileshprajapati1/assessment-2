@@ -2,8 +2,11 @@
 <?php
 class Controller{
 
-    echo  "called";
-
+  function __construct()
+  {
+    
+    
+  }
 
 }
 
