@@ -2,7 +2,7 @@
 <footer id="footer" class="py-sm-5 py-4 bg-theme">
         <div class="container">
             <div class="footer-top-w3ls">
-                <h2><a href="index.html" class="navbar-brand">recruit</a></h2>
+                <h2><a href="home" class="navbar-brand">recruit</a></h2>
                 <p class="text-white">Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt
                     ut labore et dolore magna aliquyam
                     erat, At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, no sea
@@ -19,59 +19,59 @@
                         <p>90 Street, landmark
                             <br>City State 34189.</p>
                     </div>
-                    <div class="d-flex mt-3 align-items-center">
+                    <!-- <div class="d-flex mt-3 align-items-center">
                         <span class="fa fa-building mr-4"></span>
                         <p>16 Street, landmark
                             <br>City State 74789.</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-sm-6 mt-sm-0 mt-5">
-                    <h5>Quick links</h5>
+                    <!-- <h5>Quick links</h5>
                     <ul class="list-unstyled quick-links">
                         <li>
-                            <a href="index.html">
+                            <a href="home">
                                 <span class="fa fa-play"></span>Home</a>
                         </li>
                         <li>
-                            <a href="about.html">
+                            <a href="about">
                                 <span class="fa fa-play"></span>About</a>
-                        </li>
-                        <li>
-                            <a href="job_list.html">
+                        </li> -->
+                        <!-- <li>
+                            <a href="job_list">
                                 <span class="fa fa-play"></span>Job List</a>
                         </li>
                         <li>
-                            <a href="job_single.html">
+                            <a href="job_single">
                                 <span class="fa fa-play"></span>Job Single</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
+                        </li> -->
+                        <!-- <li>
+                            <a href="contact">
                                 <span class="fa fa-play"></span>Contact</a>
-                        </li>
-                    </ul>
+                        </li> -->
+                    <!-- </ul> -->
                 </div>
 
                 <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
                     <h5>Quick links</h5>
                     <ul class="list-unstyled quick-links">
                         <li>
-                            <a href="index.html">
+                            <a href="home">
                                 <span class="fa fa-play"></span>Home</a>
                         </li>
                         <li>
-                            <a href="about.html">
+                            <a href="about">
                                 <span class="fa fa-play"></span>About</a>
                         </li>
-                        <li>
-                            <a href="job_list.html">
+                        <!-- <li>
+                            <a href="job_list">
                                 <span class="fa fa-play"></span>Job List</a>
                         </li>
                         <li>
-                            <a href="job_single.html">
+                            <a href="job_single">
                                 <span class="fa fa-play"></span>Job Single</a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href="contact.html">
+                            <a href="contact">
                                 <span class="fa fa-play"></span>Contact</a>
                         </li>
                     </ul>
@@ -100,9 +100,9 @@
     </div>
     
     <!-- js -->
-    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="<?php echo $this->baseURL ;?>js/jquery-2.2.3.min.js"></script>
     <!-- Slider-JavaScript -->
-    <script src="js/responsiveslides.min.js"></script>
+    <script src="<?php echo $this->baseURL ;?>js/responsiveslides.min.js"></script>
     <script>
         $(function () {
             $("#slider, #slider1").responsiveSlides({
@@ -134,8 +134,8 @@
     </script>
     <!-- script for password match -->
     <!-- //js -->
-    <script src="js/move-top.js"></script>
-    <script src="js/easing.js"></script>
+    <script src="<?php echo $this->baseURL ;?>js/move-top.js"></script>
+    <script src="<?php echo $this->baseURL ;?>js/easing.js"></script>
     <script>
         jQuery(document).ready(function ($) {
             $(".scroll").click(function (event) {
@@ -166,12 +166,12 @@
 
         });
     </script>
-    <script src="js/SmoothScroll.min.js"></script>
+    <script src="<?php echo $this->baseURL ;?>js/SmoothScroll.min.js"></script>
     <!-- //smooth-scrolling-of-move-up -->
     <!-- Bootstrap core JavaScript
 ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="<?php echo $this->baseURL ;?>js/bootstrap.min.js"></script>
 </body>
 
 </html>

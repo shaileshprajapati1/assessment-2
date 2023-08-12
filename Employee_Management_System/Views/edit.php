@@ -28,44 +28,44 @@
                         <div class="row register-form">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name *" value="" />
+                                    <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name *" value="<?php echo $ViewRes['Data'][0]->firstname;?>" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name *" value="" />
+                                    <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name *" value="<?php echo $ViewRes['Data'][0]->lastname;?>" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" minlength="5" maxlength="8" name="password" id="password" class="form-control" placeholder="Password *" value="" />
+                                    <input type="password" minlength="5" maxlength="8" name="password" id="password" class="form-control" placeholder="Password *" value="<?php echo $ViewRes['Data'][0]->password;?>" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" minlength="5" maxlength="8" name="cpassword" id="cpassword" class="form-control" placeholder="Confirm Password *" value="" />
+                                    <input type="password" minlength="5" maxlength="8" name="cpassword" id="cpassword" class="form-control" placeholder="Confirm Password *" value="<?php echo $ViewRes['Data'][0]->cpassword;?>" />
                                 </div>
 
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email *" value="" />
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email *" value="<?php echo $ViewRes['Data'][0]->email;?>" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" minlength="10" maxlength="10" name="mobile" class="form-control" placeholder="Your Phone *" value="" />
+                                    <input type="text" minlength="10" maxlength="10" name="mobile" class="form-control" placeholder="Your Phone *" value="<?php echo $ViewRes['Data'][0]->mobile;?>" />
                                 </div>
 
                                 <div class="form-group">
-                                    <textarea class="form-control" name="address" id="address" cols="30" rows="1" placeholder="Enter Address"></textarea>
+                                    <textarea class="form-control" name="address" id="address" cols="30" rows="1" placeholder="Enter Address"><?php echo $ViewRes['Data'][0]->address;?></textarea>
                                 </div>
                                 <div class="form-group">
                                     <div class="maxl">
                                         <label class="radio inline">
-                                            <input type="radio" name="gender" value="male" >
+                                            <input type="radio" name="gender" value="male" <?php if($ViewRes['Data'][0]->gender == "male"){echo "checked";} ;?>>
                                             <span> Male </span>
                                         </label>
                                         <label class="radio inline">
-                                            <input type="radio" name="gender" value="female">
+                                            <input type="radio" name="gender" value="female" <?php if($ViewRes['Data'][0]->gender == "female"){echo "checked";} ;?>>
                                             <span>Female </span>
                                         </label>
                                     </div>
                                 </div>
 
-                                <input type="submit" name="add" class="btnRegister" value="ADD EMPLOYEE" />
+                                <input type="submit" name="update" class="btnRegister" value="UPDATE EMPLOYEE" />
                             </div>
                         </div>
                     </form>
