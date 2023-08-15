@@ -76,7 +76,11 @@ class Controller extends Model
               $InserRes = $this->Insert("employee", $Data);
             }
             if ($InserRes['Code'] == 1) {
-              header("location:viewemployee");
+              echo "<script>
+              alert ('Employee Data Succesfully ADD.');
+              window.location.href='viewemployee';
+              </script>";
+              // header("location:viewemployee");
             }
           }
 
