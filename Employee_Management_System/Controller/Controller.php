@@ -27,28 +27,30 @@ class Controller extends Model
           include_once("Views/footer.php");
           break;
         case '/delete':
-         $DeleteRes = $this->Delete("employee",array("id"=>$_GET['userid']));
-         if($DeleteRes['Code'] == 1){
-         }
+          $DeleteRes = $this->Delete("employee", array("id" => $_GET['userid']));
+          if($DeleteRes['Code'] == 1){
+            header("location:viewemployee"); 
+          }
+
           break;
         case '/edit':
-          $ViewRes = $this->Select("employee",array("id"=>$_GET['userid']));
+          $ViewRes = $this->Select("employee", array("id" => $_GET['userid']));
           // echo "<pre>";
           // print_r($ViewRes['Data'][0]);
           // echo "</pre>";
-          
+
           include_once("Views/edit.php");
-          if(isset($_POST['update'])){
+          if (isset($_POST['update'])) {
             array_pop($_POST);
             $Data = $_POST;
-            $UpdateRes = $this->Update("employee",$Data,array("id"=>$_GET["userid"]));
+            $UpdateRes = $this->Update("employee", $Data, array("id" => $_GET["userid"]));
             // echo "<pre>";
             // print_r($UpdateRes);
             // echo "</pre>";
-            if($UpdateRes['Code']==1){
+            if ($UpdateRes['Code'] == 1) {
               header("location:viewemployee");
             }
-          }          
+          }
           break;
         case '/viewemployee':
 

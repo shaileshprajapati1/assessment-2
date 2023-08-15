@@ -14,7 +14,7 @@
 
             <div class="text-center mt-3">
               <a href="home">Home</a>  <h2><b>View All Employee</b></h2>
-            </div>
+            </div><button class="btn btn-success"><a href="addemployee">Add Employee</a></button>
             <table class="table table-bordered ">
                 <thead>
                     <tr>
@@ -42,7 +42,7 @@
                             <td class="text-center">
 
                                 <button  class="btn btn-primery "><a href="edit?userid=<?php echo $value->id; ?>">Edit</a></button>
-                                <button class="btn btn-danger"><a href="delete?userid=<?php echo $value->id; ?>">Delete</a></button>
+                                <button class="btn btn-danger"><a  href="delete?userid=<?php echo $value->id ; ?>">Delete</a></button>
                             </td>
                         </tr>
                     <?php    }
